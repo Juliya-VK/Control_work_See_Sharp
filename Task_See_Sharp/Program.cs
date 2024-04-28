@@ -5,3 +5,16 @@
 string[] array1 = new string[4] { "hello", "2", "world", ":)" };
 string[] array2 = new string[array1.Length];
 
+void FillArray(string[] source, string[] target)
+{
+    int count = 0
+    for (int i = 0; i < source.Length; i++)
+    {
+        if (source[i].Length <= 3)
+        {
+            target[count] = source[i];
+            count++;
+        }
+    }
+}
+
