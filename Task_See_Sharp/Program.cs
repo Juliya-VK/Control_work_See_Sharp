@@ -36,3 +36,4 @@ void ShowArray(string[] array)
 }
 FillArray(array1, array2);
 ShowArray(array2);
+
