@@ -27,7 +27,10 @@ void ShowArray(string[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write($"\"{array[i]}\" "); 
+        if (!string.IsNullOrEmpty(array[i])) // Проверяем, что строка не пустая или не null
+        {
+            Console.Write($"\"{array[i]}\" "); // Выводим только непустые элементы в кавычках
+        }
     }
     Console.WriteLine();
 }
